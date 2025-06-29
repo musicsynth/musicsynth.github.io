@@ -229,6 +229,7 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 3rem;
+            margin-top: 2rem;
             color: #2d3748;
         }
 
@@ -522,6 +523,39 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Demo Section */
+        .demo {
+            background: #f8fafc;
+            text-align: center;
+        }
+
+        .video-container {
+            max-width: 600px;
+            margin: 3rem auto 0;
+            position: relative;
+            padding-bottom: 33.75%; /* 16:9 aspect ratio but smaller height */
+            height: 0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .demo-description {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            color: #718096;
+            line-height: 1.8;
+        }
     </style>
 </head>
 <body>
@@ -567,6 +601,26 @@
                         Learn More
                     </a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">See MusicSynth in Action</h2>
+            <p class="demo-description animate-on-scroll">
+                Watch how MusicSynth transforms sheet music into beautiful visual piano roll animations. 
+                From image upload to stunning video generation - experience the magic of AI-powered music learning.
+            </p>
+            <div class="video-container animate-on-scroll">
+                <iframe 
+                    src="https://www.youtube.com/embed/4Tr0otuiQuU?controls=1&amp;rel=0&amp;modestbranding=1" 
+                    title="MusicSynth Demo Video" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </section>
